@@ -5,15 +5,15 @@ html,body,*{
 }
 
 :root{
-    --primcool #213b65;
-    --tertiarycool #faeba0;
-    --secondarycool #e33032;
+    --primary-cool: #213b65;
+    --tertiary-cool: #faeba0;
+    --secondary-cool: #e33032;
+    --fontcolor-cool: white;
 
-    --primwarm #56202f;
-    --tertiarywarm #faf9dd;
-    --secondarywarm #cb4f3a;
-
-    --font-color: #001010;
+    --primary-warm: #56202f;
+    --tertiary-warm: #faf9dd;
+    --secondary-warm: #cb4f3a;
+    --fontcolor-warm: black;
 
     --h1: 7.594rem;
     --h2: 5.063rem;
@@ -23,11 +23,25 @@ html,body,*{
 }
 
 h1{
+    font-family: "Handjet", sans-serif;
+    font-optical-sizing: auto;
+
     font-size: var(--h1);
+    color: var(--fontcolor);
+    text-align: center;
+}
+
+p{
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 h2{
+    font-family: "Handjet", sans-serif;
+    font-optical-sizing: auto;
     font-size: var(--h2);
+    color: var(--fontcolor);
 }
 
 body{
@@ -35,13 +49,15 @@ body{
 }
 
 .warm{
-    --primary: var(--primcool);
-    --tertiary: var(--tertiarywarm);
-    --secondary: var(--secondarywarm);
+    --primary: var(--primary-warm);
+    --tertiary: var(--tertiary-warm);
+    --secondary: var(--secondary-warm);
+    --fontcolor: var(--fontcolor-warm);
 }
 
 .cool{
-    --primary: var(--primcool);
-    --tertiary: var(--tertiarycool);
-    --secondary: var(--secondarycool);
+    --primary: var(--primary-cool);
+    --tertiary: var(--tertiary-cool);
+    --secondary: var(--secondary-cool);
+    --fontcolor: var(--fontcolor-cool);
 }
