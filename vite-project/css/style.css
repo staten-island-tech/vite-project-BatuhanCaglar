@@ -1,14 +1,14 @@
 html,body,*{
-    margin, padding: 0;
+    margin: padding 0;
     box-sizing: border-box;
     font-size:10px;
 }
 
 :root{
-    --primary-cool: #213b65;
-    --tertiary-cool: #faeba0;
-    --secondary-cool: #e33032;
-    --fontcolor-cool: white;
+    --primary-cool: #ffffff;
+    --tertiary-cool: #292323;
+    --secondary-cool: #829bb3;
+    --fontcolor-cool: black;
 
     --primary-warm: #56202f;
     --tertiary-warm: #faf9dd;
@@ -35,6 +35,8 @@ p{
     font-family: "Rajdhani", sans-serif;
     font-weight: 300;
     font-style: normal;
+    font-size: var(--h4);
+    line-height: 0.6;
 }
 
 h2{
@@ -42,10 +44,56 @@ h2{
     font-optical-sizing: auto;
     font-size: var(--h2);
     color: var(--fontcolor);
+    text-align: center;
+    margin-top: 0.5rem;
 }
 
 body{
     background-color: var(--primary);
+}
+
+#app{
+    background-color: var(--primary);
+    border: var(--secondary);
+    border-radius: 2rem;
+    border-width: 1.5rem;
+
+    width: 85vw;
+    height: auto;
+
+    margin-top: 5rem;
+    margin-left: 7%;
+    margin-right: 7%;
+
+    padding: 1rem;
+
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-between; 
+}
+
+.weapon-item{
+    flex: 28%; 
+    max-width: 28%; 
+    min-width: 35rem;
+    margin: 0; 
+    box-sizing: border-box; 
+
+    border: var(--primary);
+    background-color: var(--secondary);
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px black;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2.95%
+}
+
+#weapons-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .warm{
