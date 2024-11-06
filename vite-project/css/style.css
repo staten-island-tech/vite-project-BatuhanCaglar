@@ -9,11 +9,14 @@ html,body,*{
     --tertiary-cool: #292323;
     --secondary-cool: #829bb3;
     --fontcolor-cool: black;
+    --h1color-cool: black;
+
 
     --primary-warm: #56202f;
     --tertiary-warm: #faf9dd;
     --secondary-warm: #cb4f3a;
     --fontcolor-warm: black;
+    --h1color-warm: white;
 
     --h1: 7.594rem;
     --h2: 5.063rem;
@@ -27,7 +30,7 @@ h1{
     font-optical-sizing: auto;
 
     font-size: var(--h1);
-    color: var(--fontcolor);
+    color: var(--h1color);
     text-align: center;
 }
 
@@ -101,6 +104,7 @@ body{
     --tertiary: var(--tertiary-warm);
     --secondary: var(--secondary-warm);
     --fontcolor: var(--fontcolor-warm);
+    --h1color: var(--h1color-warm);
 }
 
 .cool{
@@ -108,4 +112,5 @@ body{
     --tertiary: var(--tertiary-cool);
     --secondary: var(--secondary-cool);
     --fontcolor: var(--fontcolor-cool);
+    --h1color: var(--h1color-color);
 }

@@ -16,3 +16,7 @@ Weapons.forEach((weapon) => {
   `;
   weaponsListContainer.insertAdjacentHTML("beforeend", weaponHTML);
 });
+
+const qualityweapons = Weapons.filter(
+  (weapon) => weapon.Tier === "Unique" || "Legendary"
+).forEach((weapon) => console.log("Quality", weapon.name));
