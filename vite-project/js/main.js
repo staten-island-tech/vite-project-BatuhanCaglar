@@ -137,5 +137,48 @@ const Weapons = [
     Status: "None",
     Overall: "A",
   },
-  v,
+  {
+    name: "Golden Halbred",
+    Tier: "Unique",
+    Scaling: "Faith",
+    StatRequirement: "High",
+    Status: "None",
+    Overall: "A",
+  },
+  {
+    name: "Golden Halbred",
+    Tier: "Unique",
+    Scaling: "Faith",
+    StatRequirement: "High",
+    Status: "None",
+    Overall: "A",
+  },
+  {
+    name: "Golden Halbred",
+    Tier: "Unique",
+    Scaling: "Faith",
+    StatRequirement: "High",
+    Status: "None",
+    Overall: "A",
+  },
 ];
+
+const cat = "meow";
+Weapons.box.insertAdjacentHTML("afterend", "<h1> We are an ${cat} </h1>");
+
+const container = document.getElementById("weapons-container");
+
+weapons.forEach((weapon) => {
+  const weaponHTML = `
+    <div class="weapon">
+      <h2>${weapon.name}</h2>
+      <p><strong>Tier:</strong> ${weapon.Tier}</p>
+      <p><strong>Scaling:</strong> ${weapon.Scaling}</p>
+      <p><strong>Stat Requirement:</strong> ${weapon.StatRequirement}</p>
+      <p><strong>Status:</strong> ${weapon.Status}</p>
+      <p><strong>Overall:</strong> ${weapon.Overall}</p>
+    </div>
+  `;
+
+  container.insertAdjacentHTML("beforeend", weaponHTML);
+});
