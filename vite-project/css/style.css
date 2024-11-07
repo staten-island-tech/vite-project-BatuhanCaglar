@@ -74,6 +74,25 @@ body{
     justify-content: space-between; 
 }
 
+#weapon-cont{
+    background-color: var(--tertiary);
+    border: var(--secondary);
+    border-radius: 2rem;
+    border-width: 1.5rem;
+
+    width: 85vw;
+    height: auto;
+
+    margin-top: 5rem;
+    margin: auto;
+
+    padding: 4rem;
+
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-between; 
+}
+
 .weapon-item{
     flex: 28%; 
     max-width: 28%; 
@@ -92,7 +111,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 button{
@@ -145,3 +163,27 @@ button:active{
     background-color: goldenrod;
     transform: scaleX(1.2);
 }
+
+.weapon-item:hover {
+    animation: transform 2.25s ease-in-out;
+}
+
+@keyframes rotateScale {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.075) rotate(20deg);
+    }
+    50% {
+        transform: scale(1.1) rotate(-20deg);
+    }
+    75% {
+        transform: scale(1.15) rotate(20deg);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+

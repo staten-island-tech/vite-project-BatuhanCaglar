@@ -1,13 +1,10 @@
 import "../css/style.css";
 import { Weapons } from "./weapons";
 
-
-
 const weaponsListContainer = document.getElementById("weapons-list");
 
 function presentWeapons(Weapons) {
-  Array.from(weaponsListContainer.children).forEach(child => child.remove());
-
+  weaponsListContainer.innerHTML = "";
   Weapons.forEach((weapon) => {
     const weaponHTML = `
       <div class="weapon-item">
@@ -19,22 +16,29 @@ function presentWeapons(Weapons) {
         <p>Overall Rating: ${weapon.Overall}</p>
     </div>
   `;
-  weaponsListContainer.insertAdjacentHTML("beforeend", weaponHTML);
-});
+    weaponsListContainer.insertAdjacentHTML("beforeend", weaponHTML);
+  });
 }
 
-presentWeapons(Weapons)
+presentWeapons(Weapons);
 
-tiersorter.addEventListener('click', () => {
-  const tiers = Weapons.filter(weapon => weapon.Tier === "Unique" || weapon.Tier === "Legendary");
+tiersorter.addEventListener("click", () => {
+  const tiers = Weapons.filter(
+    (weapon) => weapon.Tier === "Unique" || weapon.Tier === "Legendary"
+  );
   presentWeapons(tiers);
 });
 
-bestsorter.addEventListener('click', () => {
-  const ranks = Weapons.filter(weapon => weapon.Overall === "S");
+bestsorter.addEventListener("click", () => {
+  const ranks = Weapons.filter((weapon) => weapon.Overall === "S");
   presentWeapons(ranks);
 });
 
-oglist.addEventListener('click', () => {
+oglist.addEventListener("click", () => {
   presentWeapons(Weapons);
+});
+
+dexsorter.addEventListener("click", () => {
+  const dex = Weapons.filter((weapon) => weapon.Scaling.includes("Dex"));
+  presentWeapons(dex);
 });
