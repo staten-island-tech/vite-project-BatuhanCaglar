@@ -49,12 +49,12 @@ const Weapons = [
     Overall: "A",
   },
   {
-    name: "Reduvia",
-    Tier: "Unique",
-    Scaling: "Arc",
+    name: "Falcion",
+    Tier: "Common",
+    Scaling: "Dex",
     StatRequirement: "Low",
-    Status: "Bleed",
-    Overall: "A",
+    Status: "None",
+    Overall: "C",
   },
   {
     name: "Bolt of Gransax",
@@ -97,7 +97,7 @@ const Weapons = [
     Overall: "S",
   },
   {
-    name: "Wonged Scythe",
+    name: "Winged Scythe",
     Tier: "Unique",
     Scaling: "Faith",
     StatRequirement: "High",
@@ -113,12 +113,12 @@ const Weapons = [
     Overall: "A",
   },
   {
-    name: "Godskin Peeler",
-    Tier: "Unique",
+    name: "Raptor Talons",
+    Tier: "Common",
     Scaling: "Dex",
     StatRequirement: "Mid",
-    Status: "None",
-    Overall: "A",
+    Status: "Bleed",
+    Overall: "B",
   },
   {
     name: "Club",
@@ -161,12 +161,12 @@ const Weapons = [
     Overall: "D",
   },
   {
-    name: "Grafted Dragon",
-    Tier: "Unique",
-    Scaling: "Faith",
-    StatRequirement: "High",
+    name: "Long Bow",
+    Tier: "Common",
+    Scaling: "Dex",
+    StatRequirement: "Mid",
     Status: "None",
-    Overall: "A",
+    Overall: "B",
   },
 ];
 

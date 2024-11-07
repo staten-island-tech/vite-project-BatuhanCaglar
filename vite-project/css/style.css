@@ -65,8 +65,7 @@ body{
     height: auto;
 
     margin-top: 5rem;
-    margin-left: 7%;
-    margin-right: 7%;
+    margin: auto;
 
     padding: 1rem;
 
@@ -79,19 +78,40 @@ body{
     flex: 28%; 
     max-width: 28%; 
     min-width: 35rem;
-    margin: 0; 
+    height: 50rem;
     box-sizing: border-box; 
 
     border: var(--primary);
-    background-color: var(--secondary);
-    padding: 1.5rem;
-    box-shadow: 0 4px 8px black;
+    background-color: var(--secondary);    
     border-radius: 1rem;
+    box-shadow: 0 4px 8px black;
+
+    margin: auto; 
+    padding: 1.5rem;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 2.95%
+
 }
+
+button{
+  
+    font-family: "Handjet", sans-serif;
+    font-optical-sizing: auto;
+    font-size: var(--h2);
+    color: white;
+
+    background-color: var(--tertiary); 
+    border-radius: 0.5rem;
+   
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
 
 #weapons-list {
     display: flex;
@@ -113,4 +133,15 @@ body{
     --secondary: var(--secondary-cool);
     --fontcolor: var(--fontcolor-cool);
     --h1color: var(--h1color-color);
+}
+
+button:hover{
+    transition-duration: 0.2s;
+    transform: scaleY(1.2);
+}
+  
+button:active{
+    transition-duration: 0.2s;
+    background-color: goldenrod;
+    transform: scaleX(1.2);
 }
