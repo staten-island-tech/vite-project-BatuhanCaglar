@@ -1,4 +1,3 @@
-
 const Weapons = [
   {
     name: "Blood Hound's Fang",
@@ -170,4 +169,4 @@ const Weapons = [
   },
 ];
 
-export {Weapons};
+export { Weapons };

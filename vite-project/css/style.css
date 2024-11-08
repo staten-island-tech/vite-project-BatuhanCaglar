@@ -156,33 +156,44 @@ button{
 button:hover{
     transition-duration: 0.2s;
     transform: scaleY(1.2);
+    background-color: var(--secondary);
+    border: var(--secondary);
 }
   
 button:active{
     transition-duration: 0.2s;
     background-color: goldenrod;
+
     transform: scaleX(1.2);
 }
 
 .weapon-item:hover {
     animation: transform 2.25s ease-in-out;
+    background-color: white;
 }
 
-@keyframes rotateScale {
+h1:hover{
+    animation: ease-in-out;
+    transition-duration: 0.2s;
+    transform: scaleX(1.2);
+}
+  
+
+@keyframes transform {
     0% {
-        transform: scale(1);
+        transform: scaleX(1);
     }
     25% {
-        transform: scale(1.075) rotate(20deg);
+        transform: scaleX(1.15); 
     }
     50% {
-        transform: scale(1.1) rotate(-20deg);
+        transform: scaleX(1);
     }
     75% {
-        transform: scale(1.15) rotate(20deg);
+        transform: scaleX(1.15);
     }
     100% {
-        transform: scale(1);
+        transform: scaleX(1);
     }
 }
 
