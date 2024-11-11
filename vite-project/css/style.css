@@ -25,6 +25,23 @@ html,body,*{
     --h5: 1.5rem;
 }
 
+.warm{
+    --primary: var(--primary-warm);
+    --tertiary: var(--tertiary-warm);
+    --secondary: var(--secondary-warm);
+    --fontcolor: var(--fontcolor-warm);
+    --h1color: var(--h1color-warm);
+}
+
+.cool{
+    --primary: var(--primary-cool);
+    --tertiary: var(--tertiary-cool);
+    --secondary: var(--secondary-cool);
+    --fontcolor: var(--fontcolor-cool);
+    --h1color: var(--h1color-color);
+}
+
+
 h1{
     font-family: "Handjet", sans-serif;
     font-optical-sizing: auto;
@@ -97,7 +114,7 @@ body{
     flex: 28%; 
     max-width: 28%; 
     min-width: 35rem;
-    height: 50rem;
+    height: 75rem;
     box-sizing: border-box; 
 
     border: var(--primary);
@@ -111,6 +128,20 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+img {
+    width: 70%; 
+    height: auto;
+    border-radius: 0.5rem;
+    margin-top: 15rem;
+    margin: auto;   
+}
+
+#weapons-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 button{
@@ -128,29 +159,6 @@ button{
     margin: auto;
     margin-top: 1%;
     margin-bottom: 5%;
-}
-
-
-#weapons-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.warm{
-    --primary: var(--primary-warm);
-    --tertiary: var(--tertiary-warm);
-    --secondary: var(--secondary-warm);
-    --fontcolor: var(--fontcolor-warm);
-    --h1color: var(--h1color-warm);
-}
-
-.cool{
-    --primary: var(--primary-cool);
-    --tertiary: var(--tertiary-cool);
-    --secondary: var(--secondary-cool);
-    --fontcolor: var(--fontcolor-cool);
-    --h1color: var(--h1color-color);
 }
 
 button:hover{

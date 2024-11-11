@@ -7,8 +7,9 @@ function presentWeapons(Weapons) {
   weaponsListContainer.innerHTML = "";
   Weapons.forEach((weapon) => {
     const weaponHTML = `
-      <div class="weapon-item">
-        <h2>${weapon.name}</h2>
+      <div class="weapon-item">        
+        <h2>${weapon.name}</h2>        
+        <img src="${weapon.image}" alt="${weapon.name}" />
         <p>Tier: ${weapon.Tier}</p>
         <p>Scaling: ${weapon.Scaling}</p>
         <p>Stat Requirement: ${weapon.StatRequirement}</p>
