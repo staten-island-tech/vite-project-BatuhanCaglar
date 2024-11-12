@@ -27,8 +27,8 @@ html,body,*{
 
 .warm{
     --primary: var(--primary-warm);
-    --tertiary: var(--tertiary-warm);
-    --secondary: var(--secondary-warm);
+    --secondary: var(--tertiary-warm);
+    --tertiary: var(--secondary-warm);
     --fontcolor: var(--fontcolor-warm);
     --h1color: var(--h1color-warm);
 }
@@ -63,7 +63,7 @@ h2{
     font-family: "Handjet", sans-serif;
     font-optical-sizing: auto;
     font-size: var(--h2);
-    color: var(--fontcolor);
+    color: black;
     text-align: center;
     margin-top: 0.5rem;
 }
@@ -148,7 +148,7 @@ button{
   
     font-family: "Handjet", sans-serif;
     font-optical-sizing: auto;
-    font-size: var(--h2);
+    font-size: 4.5rem;
     color: white;
 
     background-color: var(--tertiary); 
