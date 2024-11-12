@@ -44,7 +44,7 @@ dexsorter.addEventListener("click", () => {
   presentWeapons(dex);
 });
 
-themebtn.addEventListener("click", function(){
+themebtn.addEventListener("click", function () {
   if (document.body.classList.contains("cool")) {
     document.body.classList.remove("cool");
     document.body.classList.add("warm");
@@ -53,4 +53,3 @@ themebtn.addEventListener("click", function(){
     document.body.classList.remove("warm");
   }
 });
- 
