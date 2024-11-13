@@ -10,6 +10,7 @@ html,body,*{
     --secondary-cool: #829bb3;
     --fontcolor-cool: black;
     --h1color-cool: black;
+    --button-cool:white;
 
 
     --primary-warm: #56202f;
@@ -17,6 +18,7 @@ html,body,*{
     --secondary-warm: #cb4f3a;
     --fontcolor-warm: black;
     --h1color-warm: white;
+    --button-warm: black;
 
     --h1: 7.594rem;
     --h2: 5.063rem;
@@ -31,6 +33,7 @@ html,body,*{
     --tertiary: var(--secondary-warm);
     --fontcolor: var(--fontcolor-warm);
     --h1color: var(--h1color-warm);
+    --buttoncolor: var(--button-warm);
 }
 
 .cool{
@@ -39,6 +42,7 @@ html,body,*{
     --secondary: var(--secondary-cool);
     --fontcolor: var(--fontcolor-cool);
     --h1color: var(--h1color-color);
+    --buttoncolor: var(--button-cool);
 }
 
 
@@ -149,7 +153,7 @@ button{
     font-family: "Handjet", sans-serif;
     font-optical-sizing: auto;
     font-size: 4.5rem;
-    color: white;
+    color: var(--buttoncolor);
 
     background-color: var(--tertiary); 
     border-radius: 0.5rem;
@@ -163,7 +167,7 @@ button{
 
 button:hover{
     transition-duration: 0.2s;
-    transform: scaleY(1.2);
+    transform: scale(1.2);
     background-color: var(--secondary);
     border: var(--secondary);
 }
@@ -172,7 +176,7 @@ button:active{
     transition-duration: 0.2s;
     background-color: goldenrod;
 
-    transform: scaleX(1.2);
+    transform: scale(1.2);
 }
 
 .weapon-item:hover {
@@ -183,25 +187,25 @@ button:active{
 h1:hover{
     animation: ease-in-out;
     transition-duration: 0.2s;
-    transform: scaleX(1.2);
+    transform: scale(1.2);
 }
   
 
 @keyframes transform {
     0% {
-        transform: scaleX(1);
+        transform: scale(1);
     }
     25% {
-        transform: scaleX(1.15); 
+        transform: scale(1.15); 
     }
     50% {
-        transform: scaleX(1);
+        transform: scale(1);
     }
     75% {
-        transform: scaleX(1.15);
+        transform: scale(1.15);
     }
     100% {
-        transform: scaleX(1);
+        transform: scale(1);
     }
 }
 
