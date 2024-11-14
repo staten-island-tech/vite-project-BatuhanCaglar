@@ -1,7 +1,6 @@
 import "../css/style.css";
 import { Weapons } from "./weapons";
 
-
 document.addEventListener("DOMContentLoaded", function () {
   const DOMSelectors = {
     tierSorter: document.querySelector("#tiersorter"),
@@ -21,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const weaponHTML = `
         <div class="weapon-item">        
           <h2>${weapon.name}</h2>        
-          <img src="${weapon.image}" alt="${weapon.name}" />
+          <img src="${weapon.image}" alt="${weapon.name}" /img>
           <p>Tier: ${weapon.Tier}</p>
           <p>Scaling: ${weapon.Scaling}</p>
           <p>Stat Requirement: ${weapon.StatRequirement}</p>
@@ -56,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
     presentWeapons(dex);
   });
 
-  DOMSelectors.themeBtn.addEventListener("click", function(){
+  DOMSelectors.themeBtn.addEventListener("click", function () {
     if (document.body.classList.contains("cool")) {
       document.body.classList.remove("cool");
       document.body.classList.add("warm");
